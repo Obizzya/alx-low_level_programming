@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - main block 
+ * main - main block
  *
  * Return: 0
  */
@@ -26,7 +26,7 @@ int main(void)
 			l_d2 = (c2 % 10 + '0');
 
 			if (c < c2)
-			{ 
+			{
 				putchar(f_d);
 				putchar(l_d);
 				putchar(' ');
