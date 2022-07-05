@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - prints to 98
- * @n: the starting point 
+ * @n: the starting point
  */
 void print_to_98(int n)
 {
@@ -16,8 +16,7 @@ void print_to_98(int n)
 				printf("%d, ", n);
 			n = n + 1;
 		}
-	}
-	else if (n > 98)
+	} else if (n > 98)
 	{
 		while (n == 98)
 		{
