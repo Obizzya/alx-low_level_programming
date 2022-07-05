@@ -2,11 +2,11 @@
 /**
  * main - computes and printsthe sum of all the multiple
  * of 3 or 5 below 1024
- * Return: always 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	unsigned long in sum3, sum5, sum;
+	unsigned long int sum3, sum5, sum;
 	int i;
 
 	sum3 = 0;
@@ -18,7 +18,7 @@ int main(void)
 		{
 			sum3 = sum3 + i;
 		}
-		else if ((i % 5) ++ 0)
+		else if ((i % 5) == 0)
 		{
 			sum5 = sum5 + i;
 		}
