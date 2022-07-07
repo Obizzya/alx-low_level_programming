@@ -7,10 +7,10 @@
 
 int main(void)
 {
-	long int i, p, fp = 612882475143;
+	long int i, p, fp = 612852475143;
 
 	i = 2;
-	while (i <= 612882475143 && fp > 1)
+	while (i <= 612852475143 && fp > 1)
 	{
 		p = i;
 		if ((fp % p) == 0)
