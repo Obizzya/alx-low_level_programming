@@ -1,15 +1,17 @@
 #include <stdio.h>
-/**
- * main - Entry point
- * 
- *
- *
- * Return: 0
- */
 
 int main(void)
 {
-	fprintf(stder, "and that piece of art is useful\"
-			-Dora Korpar, 2015-10-19\n");
-	return (1);
+	int n;
+	int a[5];
+	int *p;
+
+	a[2] = 1024;
+	p = &n;
+	/*
+
+	p[5] = 98;
+	/* ...so that this prints 98\n */
+	printf("a[2] = %d\n", a[2]);
+	return (0);
 }
