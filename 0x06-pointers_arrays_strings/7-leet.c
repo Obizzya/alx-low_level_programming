@@ -12,25 +12,21 @@
 
 char *leet(char *s)
 {
-	int a = 0, b = 0, 1 = 5;
-	char r[5] = {'A', 'E', 'O', 'T', 'L'};
-	char n[5] = {'4', '3', '0', '7', '1'};
+	int i, ii;
+	char s1[] = "aeotl";
+	char S1[] = "AEOTL";
+	char s2[] = "43071";
 
-	while (s[a])
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		b = 0;
-
-		while (b < 1)
+		for (ii = 0; ii < 5; ii++)
 		{
-			if (s[a] == r[b] || s[a] - 32 == r[b])
+			if (s[i] == s1[ii] || s[i] == S1[ii])
 			{
-				s[a] = n[b];
+				s[i] = s2[ii];
+				break;
 			}
-
-			b++;
 		}
-
-		a++;
 	}
 	return (s);
 }
