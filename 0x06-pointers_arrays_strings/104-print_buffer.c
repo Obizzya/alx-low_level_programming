@@ -4,8 +4,9 @@
  * print_buffer - prints a buffer
  * @b: buffer to print
  * @size: size of buffer
- * Return: void
+ * Return: no return
  */
+
 void print_buffer(char *b, int size)
 {
 	int j, k, l;
