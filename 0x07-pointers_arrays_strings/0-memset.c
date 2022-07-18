@@ -1,6 +1,6 @@
 #iclude "main.h"
 /**
- * *_memset - fills memory with a constant byte
+ * _memset - ironnou
  * @s: pointer to char parameter
  * @b: data to change
  * @n: index
