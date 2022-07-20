@@ -11,10 +11,10 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * get_sqrt - tries to get the square root of n continiously
+ * get_sqrt - tries to get the square root of n by continiously
  * comparing the square of 'possible_root' to n
  * @n: the number
- * @possible_root: possible root of n
+ * @possible_root: a possible root of n
  * Return: square root of n, -1 otherwise
  */
 
