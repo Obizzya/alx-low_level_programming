@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _sqrt_recursion - returns the natural square root of a number
+ * find_root - calculates i**i to check with n
  * @n: base number
  * @i: iterator number
- * Return: int
+ * Return: i
  */
 int find_root(int n, int i)
 {
