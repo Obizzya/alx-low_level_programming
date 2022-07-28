@@ -11,40 +11,34 @@ int _strlen(char *s);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	unsigned int len, i, c;
+	char *s;
+	unsigned int x, y, z;
 
 	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-
-	len = (unsigned int)_strlen(s1);
-	p = malloc((len + n + 1) * sizeof(char));
-	if (p == NULL)
-		return (NULL);
-	for (i = 0, c = 0; i < (len + n); i++)
 	{
-		if (i < len)
-			p[i] = s1[i];
-		else
-			p[i] = s2[c++];
+		x =0;
 	}
-	p[i] = '\0';
-
-	return (0);
-}
-
-/**
- * _strlen - gets the length of a string
- * @s: the string
- * Return: length of string
- */
-int _strlen(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-		;
-	return (i);
+	else
+	{
+		for (x = 0; s1[x]; ++x)
+			;
+	}
+	if (s2 == NULL)
+	{
+		y = 0;
+	}
+	else
+	{
+		for (y = 0; s2[y]; ++y)
+			;
+	}
+	if (y > n)
+		y =n;
+	s = malloc(sizeof(char) * (x + y + 1));
+	if (s == NULL)
+		return (NULL);
+	for (z = 0; z < x; z++)
+		s[z + x] = s2[z];
+	s[x + y] = '\0';
+	return (s);
 }
